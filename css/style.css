@@ -730,9 +730,12 @@ img {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    margin-bottom: 16px;
 }
 
-
+.order-service-form {
+    margin-top: 12px;
+}
 .order-service-form label {
     display: block;
     font-family: inherit;
@@ -786,7 +789,10 @@ label.order-service-checkbox input {
     padding: 0;
     margin-right: 8px;
 }
-
+.fullname::after {
+    content: icon;
+    background-image: ;
+}
 .modal-button {
     display: flex;
     justify-content: center;
@@ -811,3 +817,21 @@ label.order-service-checkbox input {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+label {
+    position: relative;
+  }
+
+label > .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    fill: var(--color-black);
+
+}
+label > input {
+    padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+    height: 2em;
+  }
