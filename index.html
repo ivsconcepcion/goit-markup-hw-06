@@ -387,28 +387,34 @@
                 <form class="order-service-form">
                 <!-- <div class="form-group" role="group" aria-labelledby="contact-details-head"> -->
                     <!-- <p id="contact-details-head">Leave your contacts and we will call you back</p> -->
-                        <label>
+                        <label class="form-fullname">
                         Name
-                        <svg class="icon">
-                            <use href="images/icons.svg#order-form-name-icon">
-                          </svg>
-                        <input class="fullname" type="text" placeholder="" name="full name" />
+                            <svg class="icon">
+                                <use href="images/icons.svg#order-form-name">
+                            </svg>
+                            <input type="text" placeholder="" name="full name" />
                         </label>
-                        <label>
+                        <label class="form-phone">
                         Phone
-                        <input type="tel" placeholder="Phone" name="phone" />
+                            <svg class="icon">
+                                <use href="images/icons.svg#order-form-phone">
+                            </svg>
+                            <input type="tel" placeholder="" name="phone" />
                         </label>
-                        <label>
+                        <label class="form-email">
                         Email
-                        <input type="email" placeholder="user@domain.com" name="email" />
+                            <svg class="icon">
+                                <use href="images/icons.svg#order-form-mail">
+                            </svg>
+                            <input type="email" placeholder="" name="email" />
                         </label>
                         <label class="order-service-comments">
-                            Comments
+                            Comment
                             <textarea name="Comments" rows="5" placeholder="Text input"></textarea>
                         </label>
                         <label class="order-service-checkbox">
                             <input type="checkbox" placeholder="agree" rows="10"> 
-                            I accept the terms and conditions of the Privacy Policy
+                            I accept the terms and conditions of the <a href="#"> Privacy Policy</a>
                         </label>
                         
                         <button type="submit" class="modal-button">Send</button>
